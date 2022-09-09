@@ -1,2 +1,2 @@
 #!/bin/bash
-$puts.c
+gcc puts.c
