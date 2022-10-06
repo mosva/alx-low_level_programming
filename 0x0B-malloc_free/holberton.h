@@ -1,33 +1,44 @@
-#include "notrebloh.h"
-#include <stdio.h>
-#include <stdlib.h>
-/**
- * create_array - create an arry of size with char c
- * @size: unsigned int type
- * @c: char type
- * Return: Return pointer to array created
- */
+fndef HEADER_FILE
 
-char *create_array(unsigned int size, char c)
-{
-	char *s;
-	unsigned int i;
+#define HEADER_FILE
 
-	if (size == 0)
-	{
-		return (NULL);
-	}
-	s = malloc((size) * sizeof(char));
-	if (s == NULL)
-	{
-		return (NULL);
-	}
-	i = 0;
-	while (i < size)
-	{
-		s[i] = c;
-		i++;
-	}
-	s[i] = '\0';
-	return (s);
-}
+
+
+int _putchar(char c);
+
+
+
+char *create_array(unsigned int size, char c);
+
+
+
+char *_strdup(char *str);
+
+
+
+int _strlen(char *s);
+
+
+
+char *str_concat(char *s1, char *s2);
+
+
+
+char *_strncat(char *dest, char *src, int n);
+
+
+
+int **alloc_grid(int width, int height);
+
+
+
+void free_grid(int **grid, int height);
+
+
+
+char *argstostr(int ac, char **av);
+
+
+
+#endif
+
